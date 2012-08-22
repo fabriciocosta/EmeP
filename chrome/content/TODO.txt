@@ -1,0 +1,24 @@
+TODO EME
+
+1) Poder completar cada campo de las primeras secciones
+2) Que los campos queden grabados en el xml
+3) Poder visualizar la ayuda de forma dinamica en el costado
+4) Pasar de pantalla a pantalla
+5) probar diferentes resoluciones
+
+
+COMUNIDAD
+
+6) Estrategia de contenidos > base de datos XML  vs futuro Offline <-> Online
+
+	1.0)
+		a) Local: SQLITE  websql
+		b) Formato de exportacion/importacion: XML
+	
+	2.0)
+		c) Remoto: Syncro Offline/Online: XMLRPC / WiWe > Base de Usuarios .
+		
+	3.0)
+		d) Remoto Online: EmeProject como /web
+	
+7) 

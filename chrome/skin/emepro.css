@@ -1,0 +1,66 @@
+/* global skin ------------------------------------------------------------- */
+@import url(chrome://global/skin/);
+
+
+/* toolbar ----------------------------------------------------------------- */
+
+toolbar[mode="icons"] .toolbarbutton-text {
+  display: block !important;
+}
+
+toolbar[mode="text"] .toolbarbutton-icon {
+  display: block;
+}
+
+toolbarbutton {
+  -moz-box-orient: vertical;
+}
+
+
+
+
+
+
+
+
+.paneheader {
+  font-family: verdana,tahoma,arial;
+  color: white;
+  /*background-color: #3169c6;*/
+  background-color: #000;
+  -moz-box-align: center;
+}
+
+.paneheader .tabs-closebutton {
+  -moz-appearance: none;
+  border: none;
+  list-style-image: url(chrome://emepro/skin/images/close-button.png);
+  -moz-image-region: rect(0px 12px 11px 0px);
+  padding:0px;
+}
+
+.paneheader .tabs-closebutton:hover {
+  -moz-image-region: rect(0px 24px 11px 12px);
+}
+
+
+
+/** EMEPRO HTML */
+
+#main {
+	background-color: #FFF;
+	height: 100%;
+	width:100%;
+}
+
+#main_box {
+	background-color: #FFF;
+}
+
+#workspace_box {
+	height: 100%;
+	width:100%;
+}
+
+
+

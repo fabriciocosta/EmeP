@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<arbol>
+<categoria clase="presentacion"><label>Presentación</label>
+	<seccion clase="portada">Portada
+		<campo clase="titulo" tipo="texto">Título</campo>
+		<campo clase="marca" tipo="texto">Marca</campo>
+		<campo clase="resumen_ejecutivo" tipo="parrafo">Resumen Ejecutivo</campo>
+	</seccion>
+	<seccion clase="responsable_del_proyecto">Responsable del proyecto
+		<seccion clase="persona_fisica">Persona Física
+			<campo clase="nombre" tipo="texto">Nombre</campo>
+			<campo clase="apellido" tipo="texto">Apellido</campo>
+			<campo clase="dni" tipo="texto">DNI / generico</campo>
+			<campo clase="fecha" tipo="fecha">Fecha de Nacimiento</campo>
+			<campo clase="domicilio" tipo="texto">Domicilio</campo>
+			<campo clase="codigo_postal" tipo="texto">CP</campo>
+			<campo clase="ciudad" tipo="texto">Ciudad</campo>
+			<campo clase="provincia" tipo="texto">Provincia</campo>
+			<campo clase="pais" tipo="texto">País</campo>
+		</seccion>
+		<seccion clase="persona_juridica">Persona Jurídica
+				<campo clase="razon" tipo="texto">Razón social</campo>
+				<campo clase="cuit" tipo="texto">CUIT / generico</campo>
+				<campo clase="domicilio" tipo="texto">Domicilio</campo>
+				<campo clase="codigo_postal" tipo="texto">CP</campo>
+				<campo clase="ciudad" tipo="texto">Ciudad</campo>
+				<campo clase="provincia" tipo="texto">Provincia</campo>
+				<campo clase="pais" tipo="texto">País</campo>
+				<campo clase="condicion_iva" tipo="texto">Cond. IVA</campo>
+				<campo clase="inicio_de_actividades" tipo="texto">Inicio de actividades</campo>
+				<campo clase="otrosdatos" tipo="parrafo">Otros datos</campo>
+		</seccion>
+	</seccion>
+</categoria>
+<categoria class="categoria"><label>Desarrollo</label>
+	<seccion clase="por_que">¿Por qué?
+		<campo clase="antecedentes" tipo="parrafo">Antecedentes</campo>
+		<campo clase="marco_institucional" tipo="parrafo">Marco Institucional</campo>
+		<campo clase="alineamiento_referencial" tipo="parrafo">Alineamiento Referencial</campo>
+		<seccion clase="bibliografia">Bibliografía
+			<campo clase="links" tipo="parrafo">Links</campo>
+			<campo clase="libros" tipo="parrafo">Libros</campo>
+			<campo clase="otros_proyectos" tipo="parrafo">Otros proyectos</campo>
+			<campo clase="medios_graficos" tipo="parrafo">Medios Gráficos</campo>
+		</seccion>
+		<seccion clase="identificacion_del_problema">Identificación del problema
+			<campo clase="links" tipo="parrafo">Problema</campo>
+			<campo clase="consecuencias_que_trae" tipo="parrafo">Consecuencias que trae</campo>
+			<campo clase="metodologias_de_deteccion" tipo="parrafo">Metodologías de Detección</campo>
+		</seccion>
+		<seccion clase="impacto_del_proyecto">Impacto del proyecto
+			<campo clase="impacto_corto_plazo" tipo="parrafo">Impacto corto plazo</campo>
+			<campo clase="impacto_mediano_plazo" tipo="parrafo">Impacto mediano plazo</campo>
+			<campo clase="impacto_largo_plazo" tipo="parrafo">Impacto largo plazo</campo>
+		</seccion>
+	</seccion>
+	<seccion clase="objetivos">Objetivos
+		<campo clase="generales" tipo="parrafo">Generales</campo>
+		<campo clase="especificos" tipo="parrafo">Específicos</campo>
+	</seccion>
+	<seccion clase="localizacion">Localización
+		<seccion clase="ubicacion_geografica">Ubicación geográfica
+			<campo clase="direccion" tipo="parrafo">Dirección</campo>
+			<campo clase="codigo_postal" tipo="parrafo">CP</campo>
+			<campo clase="ciudad" tipo="parrafo">Ciudad</campo>
+			<campo clase="provincia" tipo="parrafo">Provincia</campo>
+			<campo clase="pais" tipo="parrafo">País</campo>
+			<campo clase="googlemaps" tipo="parrafo">Google maps</campo>
+		</seccion>
+		<seccion clase="infraestructura_fisica">Infraestructura física
+			<campo clase="habilitaciones" tipo="parrafo">Habilitaciones</campo>
+			<campo clase="condiciones_de_seguridad" tipo="parrafo">Condiciones de Seguridad</campo>
+		</seccion>
+		<seccion clase="equipamiento">Equipamiento
+			<campo clase="energia" tipo="parrafo">Energía</campo>
+			<campo clase="conectividad" tipo="parrafo">Conectividad</campo>
+			<campo clase="iluminacion" tipo="parrafo">Iluminación</campo>
+			<campo clase="proyectores" tipo="parrafo">Proyectores</campo>
+			<campo clase="sonido" tipo="parrafo">Sonido</campo>
+		</seccion>
+		<seccion clase="espacios">Espacios
+			<campo clase="plano" tipo="parrafo">Plano</campo>
+			<campo clase="capacidad" tipo="parrafo">Capacidad</campo>
+			<campo clase="accesibilidad" tipo="parrafo">Accesibilidad</campo>
+		</seccion>
+		
+	</seccion>
+	<seccion clase="participantes">Participantes
+		<seccion clase="integrantes">Integrantes
+			<campo clase="integrantes" tipo="multiple">Lista de Personas
+				<ficha clase="persona">
+					<campo clase="nombre" tipo="texto">Nombre</campo>
+					<campo clase="apellido" tipo="texto">Apellido</campo>
+					<campo clase="dni" tipo="texto">DNI</campo>
+					<campo clase="telefono" tipo="texto">Teléfono</campo>
+					<campo clase="email" tipo="texto">Email</campo>
+					<campo clase="web" tipo="texto">Web</campo>					
+					<campo clase="msn" tipo="texto">msn | skype | fck</campo>
+					<campo clase="cv" tipo="archivo">CV</campo>
+					<campo clase="otros" tipo="parrafo">otros datos</campo>					
+					<campo clase="perfil" tipo="parrafo">Perfil</campo>
+					<campo clase="responsabilidad" tipo="texto">Responsabilidad</campo>
+					<campo clase="rol" tipo="texto">Rol</campo>
+				</ficha>
+				<registro clase="persona">
+					<campo clase="nombre" tipo="texto">Juan</campo>
+					<campo clase="apellido" tipo="texto">Perez</campo>
+					<campo clase="dni" tipo="texto">21345567</campo>
+					<campo clase="telefono" tipo="texto">44445555</campo>
+					<campo clase="email" tipo="texto">juanpereze@hotmail.com</campo>
+					<campo clase="web" tipo="texto">-</campo>					
+					<campo clase="msn" tipo="texto">-</campo>
+					<campo clase="cv" tipo="archivo">-</campo>
+					<campo clase="otros" tipo="parrafo">-</campo>					
+					<campo clase="perfil" tipo="parrafo">Técnico</campo>
+					<campo clase="responsabilidad" tipo="texto">Electricidad</campo>
+					<campo clase="rol" tipo="texto">Tendido eléctrico del escenario</campo>				
+				</registro>
+			</campo>
+		</seccion>
+		<seccion clase="organigrama" tipo="grafico">Organigrama
+			<campo clase="organigrama" tipo="multiple">Integrantes
+				<ficha clase="organigrama">
+					<campo clase="integrante" tipo="referencia_persona">Persona</campo>
+					<campo clase="responde_asesora" tipo="referencia_persona">Persona</campo>
+					<campo clase="sector" tipo="texto">Sector</campo>
+				</ficha>
+			</campo>
+			<campo clase="organigrama" tipo="multiple">Colaboradores
+				<ficha clase="organigrama">
+					<campo clase="colaborador" tipo="texto">Colaborador</campo>
+					<campo clase="responde_asesora" tipo="referencia_persona">Persona</campo>
+					<campo clase="sector" tipo="texto">Sector</campo>
+				</ficha>
+			</campo>
+			<campo clase="organigrama" tipo="multiple">Proveedores
+				<ficha clase="organigrama">
+					<campo clase="proveedor" tipo="texto">Proveedor</campo>
+					<campo clase="responde_asesora" tipo="referencia_persona">Persona</campo>
+					<campo clase="sector" tipo="texto">Sector</campo>
+				</ficha>			
+			</campo>
+		</seccion>	
+		<seccion clase="organigrama" tipo="grafico">Beneficiarios
+			<campo clase="rango_etario_de" tipo="rango_de">Rango de edad de</campo>
+			<campo clase="rango_etario_a" tipo="rango_a">Rango de edad a</campo>
+			<campo clase="sexo" tipo="multiple">Sexo</campo>
+			<campo clase="localizacion" tipo="multiple">Localización</campo>
+			<campo clase="educacion" tipo="multiple">Educación</campo>
+			<campo clase="nivel_economico" tipo="multiple">Nivel económico</campo>
+			<campo clase="ocupacion" tipo="multiple">Ocupación</campo>
+		</seccion>
+	</seccion>
+	<seccion clase="como">¿Cómo? / Actividad
+		<campo clase="estrategias" tipo="parrafo">Estrategias</campo>
+		<seccion clase="cuando">Etapas a seguir
+			<campo clase="etapas" tipo="multiple">lista de etapas
+				<ficha clase="etapa">
+					<campo clase="etapa" tipo="texto">Nombre de etapa</campo>
+					<campo clase="descripcion" tipo="parrafo">Descripción</campo>
+					<campo clase="resultado" tipo="parrafo">Resultados | metas</campo>
+				</ficha>
+			</campo>
+		</seccion>
+		<seccion clase="cuando">Actividades
+			<campo clase="etapas" tipo="multiple">lista de actividades
+				<ficha clase="actividad">
+					<campo clase="etapa" tipo="texto">Nombre de la actividad</campo>
+					<campo clase="descripcion" tipo="parrafo">Descripción</campo>
+					<campo clase="desde_unidad" tipo="seleccion" valores="unidad|fecha">Desde Unidad</campo>
+					<campo clase="desde_fecha" tipo="fecha">Desde Fecha</campo>
+					<campo clase="hasta_unidad" tipo="seleccion" valores="unidad|fecha">Hasta Unidad</campo>
+					<campo clase="hasta_fecha" tipo="fecha">Hasta Fecha</campo>					
+					<campo clase="resultado" tipo="parrafo">Resultados | metas</campo>
+					<campo clase="responsable" tipo="referencia_persona">Responsable</campo>
+				</ficha>
+				
+			</campo>
+		</seccion>		
+		<seccion clase="cuando">Métodos
+			<campo clase="opciones" tipo="texto">Opciones o alternativas de acción</campo>
+			<campo clase="criterios" tipo="texto">Criterios Utilizados</campo>
+		</seccion>
+		<campo clase="forma" tipo="texto">Forma como las actividades aportan a la solución</campo>
+		<campo clase="fuentes" tipo="texto">Fuentes consultadas</campo>
+	</seccion>
+	<seccion clase="cuando">¿Cuando?
+		<seccion clase="cronograma">Cronograma
+		</seccion>
+	</seccion>
+	<seccion clase="comunicacion">Recursos
+		<campo clase="necesidades" tipo="parrafo">Necesidades</campo>
+		<seccion clase="ingresos">Ingresos
+			<campo clase="ingresos" tipo="multiple"> lista de ingresos
+				<ficha clase="ingreso">
+					<campo clase="concepto" tipo="texto">Concepto</campo>
+					<campo clase="unidad" tipo="texto">Unidad</campo>
+					<campo clase="cantidad" tipo="texto">Cantidad</campo>
+					<campo clase="ingreso_total" tipo="texto">Ingreso Total</campo>
+					<campo clase="cuotas" tipo="multiple">Cuotas
+						<ficha clase="cuota">
+							<campo clase="unidad" tipo="seleccion" valores="unidad|fecha">Unidad</campo>
+							<campo clase="fecha" tipo="fecha">Fecha</campo>
+							<campo clase="monto" tipo="fecha">Monto</campo>
+						</ficha>
+					</campo>
+					<campo clase="observaciones" tipo="texto">Observaciones</campo>
+				</ficha>
+			</campo>
+		</seccion>
+		<seccion clase="presupuesto_economico">Presupuesto económico
+			<campo clase="ingresos" tipo="multiple"> lista de presupuestos
+				<ficha clase="presupuesto">
+					<campo clase="concepto" tipo="texto">Concepto</campo>
+					<campo clase="descripcion" tipo="texto">Descripción</campo>
+					<campo clase="proveedor" tipo="texto">Proveedor</campo>
+					<campo clase="cantidad" tipo="texto">Cantidad</campo>
+					<campo clase="unidad" tipo="texto">Unidad</campo>
+					<campo clase="costo_unitario" tipo="texto">Costo Unitario</campo>
+					<campo clase="subtotal" tipo="texto">Sub-Total</campo>
+					<campo clase="actividad" tipo="referencia_actividad">Actividad</campo>
+					<campo clase="responsable" tipo="referencia_integrante">Responsable</campo>
+				</ficha>
+			</campo>
+		</seccion>
+		<seccion clase="presupuesto_financiero">Presupuesto financiero
+		</seccion>
+		<seccion clase="presupuesto_financiero">Presupuesto de terceros
+			<campo clase="ingresos" tipo="multiple"> lista de presupuestos financieros
+				<ficha clase="presupuesto_tercero">
+					<campo clase="concepto" tipo="texto">Concepto</campo>
+					<campo clase="descripcion" tipo="texto">Descripción</campo>
+					<campo clase="archivo" tipo="archivo">Archivo</campo>
+				</ficha>
+			</campo>			
+		</seccion>
+		<seccion clase="estrategias_de_financiamiento">Estrategias de financiamiento
+			<campo clase="publico" tipo="parrafo">Público</campo>
+			<campo clase="privado" tipo="parrafo">Privado</campo>
+			<campo clase="propio" tipo="parrafo">Propio</campo>
+		</seccion>
+	</seccion>	
+	<seccion clase="comunicacion">Comunicación
+			<seccion clase="comunicacion_externa">Comunicación interna
+				<campo clase="estrategia" tipo="parrafo">estrategia</campo>
+				<campo clase="objetivos" tipo="parrafo">Objetivos</campo>
+			</seccion>
+			<seccion clase="comunicacion_externa">Comunicación externa
+				<campo clase="estrategia" tipo="parrafo">estrategia</campo>
+				<campo clase="objetivos" tipo="parrafo">Objetivos</campo>
+			</seccion>
+			<seccion clase="canales">Canales
+				<campo clase="prensa" tipo="parrafo">Prensa</campo>
+				<campo clase="mailing" tipo="parrafo">Mailing</campo>
+				<campo clase="web" tipo="parrafo">Web</campo>
+				<campo clase="medios_graficos" tipo="parrafo">Medios Gráficos</campo>
+				<campo clase="tv_y_radio" tipo="parrafo">TV y radio</campo>
+				<campo clase="via_publica" tipo="parrafo">Vía Pública</campo>
+				<campo clase="Relaciones públicas" tipo="parrafo">Relaciones públicas</campo>
+				<campo clase="llamados_telefonicos" tipo="parrafo">Llamados telefónicos</campo>
+				<campo clase="Correo" tipo="parrafo">Correo</campo>
+				<campo clase="Otros" tipo="parrafo">Otros</campo>
+			</seccion>				
+			<seccion clase="canales">Evaluación e informe de comunicación
+				<campo clase="evaluacion" tipo="parrafo">Evaluación</campo>
+			</seccion>					
+	</seccion>
+</categoria>
+
+<categoria clase="presentacion"><label>Sustentabilidad</label>
+	<seccion clase="contraprestaciones">Contraprestaciones
+		<campo clase="contraprestaciones" tipo="parrafo">Contraprestaciones</campo>
+	</seccion>
+	<seccion clase="continuidad">Continuidad
+		<campo clase="continuidad" tipo="parrafo">Continuidad</campo>
+	</seccion>
+	<seccion clase="resultados">Resultados proyectados
+		<campo clase="maxima" tipo="parrafo">Máxima</campo>
+		<campo clase="minima" tipo="parrafo">Mínima</campo>
+	</seccion>
+	<seccion clase="viabilidad">Viabilidad
+		<campo clase="viabilidad" tipo="parrafo">Viabilidad</campo>
+	</seccion>
+	<seccion clase="registro">Registro
+		<campo clase="registro" tipo="parrafo">Registro</campo>
+	</seccion>
+	<seccion clase="evaluacion">Evaluación
+		<campo clase="cuantitativa" tipo="parrafo">Cuantitativa</campo>
+		<campo clase="cualitativa" tipo="parrafo">Cualitativa</campo>
+	</seccion>	
+</categoria>
+<categoria clase="anexos"><label>Anexos</label>
+	
+	<campo clase="anexos" tipo="multiple">
+		<ficha clase="anexo">
+			<campo clase="titulo" tipo="texto">Título</campo>
+			<campo clase="archivo" tipo="archivo">Archivo</campo>
+			<campo clase="documento" tipo="parrafo">Documento</campo>
+		</ficha>
+		<entrada clase="anexo">
+			<campo clase="titulo" tipo="texto">anexo número 1</campo>
+			<campo clase="archivo" tipo="archivo">Archivo</campo>
+			<campo clase="documento" tipo="parrafo">Documento</campo>
+		</entrada>
+		<entrada clase="anexo">
+			<campo clase="titulo" tipo="texto">anexo número 2</campo>
+			<campo clase="archivo" tipo="archivo">Archivo</campo>
+			<campo clase="documento" tipo="parrafo">Documento</campo>
+		</entrada>
+	</campo>
+	
+	
+</categoria>
+
+<categoria clase="presentacion"><label>Informes y Reportes</label>
+	<campo clase="informes" tipo="multiple">
+		<ficha clase="informe">
+			<campo clase="titulo" tipo="texto">Título</campo>
+			<campo clase="documento" tipo="parrafo">Documento</campo>
+		</ficha>
+		<entrada clase="informe">
+			<campo clase="titulo" tipo="texto">informe uno</campo>
+		</entrada>		
+		<entrada clase="informe">
+			<campo clase="titulo" tipo="texto">informe CCEBA</campo>
+		</entrada>
+		<entrada clase="informe">
+			<campo clase="titulo" tipo="texto">RESUMIDO</campo>
+		</entrada>		
+	</campo>
+</categoria>
+
+
+</arbol>

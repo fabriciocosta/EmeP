@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://emepro/skin/emepro.css" type="text/css"?>
+<?xml-stylesheet href="chrome://emepro/skin/site.css" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://emepro/locale/emepro.dtd">
+
+<window id="main" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" xmlns:html="http://www.w3.org/1999/xhtml"
+        title="&title;" style="min-width: 500px; min-height: 300px; width: 700px; height: 500px;" persist="screenX screenY width height">
+
+	<script type="application/x-javascript" src="chrome://global/content/printUtils.js"/>
+
+	<script type="application/x-javascript" src="chrome://emepro/content/controller.js"/>
+	<script type="application/x-javascript" src="chrome://emepro/content/emepro.js"/>
+
+	<script type="text/javascript" src="chrome://emepro/content/js/jquery-1.4.2.js"></script>
+	<script type="text/javascript" src="chrome://emepro/content/js/jquery-ui-1.8.4.custom.min.js"></script>
+	<script type="text/javascript" src="chrome://emepro/content/js/wiwe.js"></script>
+
+
+	<commandset id="cmdset_file">
+
+	<command id="cmd_pageSetup" label="&filePageSetup.label;" oncommand="CommandUpdater.doCommand(this.id);"/>
+	<command id="cmd_print" label="&filePrint.label;" oncommand="CommandUpdater.doCommand(this.id);"/>
+	<command id="cmd_exit" label="&fileExit.label;" oncommand="CommandUpdater.doCommand(this.id);"/>
+	</commandset>
+
+	<commandset id="cmdset_edit">
+
+	<command id="cmd_copy" label="&editCopy.label;" oncommand="CommandUpdater.doCommand(this.id);"/>
+	<command id="cmd_selectAll" label="&editSelectAll.label;" oncommand="CommandUpdater.doCommand(this.id);"/>
+	</commandset>
+
+
+
+
+	<commandset id="cmdset_tools">
+	<command id="cmd_options" label="&toolsOptions.label;" oncommand="CommandUpdater.doCommand(this.id);"/>
+	</commandset>
+
+
+	<commandset id="cmdset_help">
+	<command id="cmd_about" label="&helpAbout.label;" oncommand="CommandUpdater.doCommand(this.id);"/>
+	</commandset>
+
+
+	<keyset id="keyset_main">
+
+
+	<key id="key_copy" key="&editCopy.key;" modifiers="accel" command="cmd_copy"/>
+	<key id="key_selectAll" key="&editSelectAll.key;" modifiers="accel" command="cmd_selectAll"/>
+	<key id="key_print" key="&filePrint.key;" modifiers="accel" command="cmd_print"/>
+	</keyset>
+
+
+
+	<popupset>
+
+
+	</popupset>
+
+
+	<toolbox>
+
+
+	<toolbar id="main-toolbar" mode="icons">
+
+	</toolbar>
+
+	</toolbox>
+	
+	<hbox id="main_box" flex="1">
+		<vbox id="workspace_box" flex="1" style="overflow:auto">
+			<html:div id="container">
+				<html:div class="header">
+				<html:div class="logo"></html:div>
+				<html:div id="menu" class="menu">
+					<html:ul class="level-0">
+						<html:li class="item-0 first level-0">
+							<html:a>Archivo</html:a>
+							<html:ul class="level-1">
+								<html:li class="item-0 first" onclick="javascript:openFile();">Abrir un proyecto</html:li>
+								<html:li class="item-0">Salvar</html:li>
+								<html:li>Salvar como...</html:li>
+								<html:li>Salir</html:li>
+							</html:ul>
+						</html:li>
+						<html:li class="item-1 level-0">
+							<html:a>Editar</html:a>
+							<html:ul class="level-1">
+								<html:li>Copiar</html:li>
+								<html:li>Cortar</html:li>
+								<html:li>Pegar</html:li>
+								<html:li>Pegar como solo texto</html:li>
+							</html:ul>
+						</html:li>
+						<html:li class="item-2 level-0">
+							<html:a>Buscar</html:a>
+							<html:ul class="level-1">
+								<html:li>Buscar texto...</html:li>
+								<html:li>Reemplazar texto...</html:li>
+								<html:li class="separator"></html:li>
+							</html:ul></html:li>			
+						<html:li class="item-3 level-0">
+							<html:a>Ver</html:a>
+							<html:ul class="level-1">
+								<html:li>Ayuda</html:li>
+								<html:li>Cronograma</html:li>
+								<html:li>Presupuesto</html:li>
+								<html:li>Tutorial online</html:li>
+								<html:li>Ejemplos</html:li>
+							</html:ul></html:li>
+						<html:li class="item-4 level-0">
+							<html:a>Opciones</html:a>
+						</html:li>
+					</html:ul>
+				</html:div>				
+			</html:div>
+				<html:div class="panel">
+				<html:table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%">
+					<html:tr>
+						<html:td  class="tdtoc" width="230" align="left" valign="top">
+							<html:div class="toc">
+								<html:div class="userinfo">
+									<html:div class="userlogo">
+									<html:img title="mi foto" src="chrome://emepro/skin/img/05-Cross-Cultural-Communicatio.gif" />
+									</html:div>
+									<html:div class="username">
+									NOMBRE PERSONA
+									</html:div>
+									<html:div class="projecttitle">
+									EL NOMBRE DE MI PROYECTO CULTURAL
+									</html:div>
+								</html:div>							
+							
+								<html:div id="dbtree" class="tree">
+							
+								</html:div>
+								
+							</html:div>		
+						</html:td>
+						<html:td class="tdpage" valign="top" align="left">
+								<html:div id="dbpage" class="page">
+									<html:div id="dblocation" class="location">
+										<html:ul class="location">
+											<html:li class="parent-section">PRESENTACION</html:li> / <html:li class="selected-section">Portada</html:li>
+										</html:ul>
+									</html:div>
+									<html:div id="dbformulario" class="formulario">
+									</html:div>
+									<html:div id="dbbotones" class="botones">
+									</html:div>
+
+								
+								</html:div>
+						</html:td>
+						<html:td class="tdsidebar" width="188" valign="top" align="right">
+							
+							<html:div class="sidebar">
+
+								<html:div class="help">
+								
+									<html:div id="modo" class="modo modo-guiado">
+										<html:button>GUIADO</html:button>
+									</html:div>
+									
+									<script>
+										$('#modo').click(function() {
+											 var cuerpo = $("#ayudaguia");
+											 var modo = document.getElementById("modo");
+										
+											 if (cuerpo.is( ":visible" )) {
+											 cuerpo.hide();
+											 modo.className = "modo modo-noguiado";
+											 } else {
+											 modo.className = "modo modo-guiado";
+											 cuerpo.slideDown("slow");
+											}
+										}); 
+									</script>
+									
+									<html:div class="buscador">
+										<html:input type="text" value="buscar"/>
+									</html:div>
+									
+									<html:div id="ayudaguia" class="contenedor">
+										<html:img class="flechaayuda" src="chrome://emepro/skin/eme/flechaayuda.png" border="0"/>
+										<html:span class="textocontenedor">
+										
+											<!--<iframe width="100%" height="100%" name="ayuda" src="ayuda.html"> You need iframes </iframe>-->
+											<html:h2 class="tema">TITULO PROYECTOS</html:h2>
+											<html:p>
+											Esto es un texto de ayuda para el usuario, le servira para completar correctamente los campos 
+											de los formularios en cada seccion.
+											</html:p>
+										</html:span>
+									</html:div>
+									
+								</html:div>
+								
+								<html:div class="banners">
+										PARTNER
+								</html:div>
+							</html:div>
+						</html:td>
+					</html:tr>
+				</html:table>
+			</html:div>	
+			</html:div>
+		</vbox>
+	</hbox>
+</window>

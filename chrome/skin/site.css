@@ -1,0 +1,1482 @@
+@charset "UTF-8";
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 00px;
+	margin-bottom: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #000000;
+}
+
+a:link, a:visited, a:active {
+	
+	/*font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;*/
+	text-decoration: none;
+	color: #702C91;
+}
+
+a:hover {
+	
+	/*font-family: Arial, Helvetica, sans-serif;*/
+	/*font-size: 11px;*/
+	text-decoration: none;
+	color: #C492DC;
+}
+
+
+
+
+
+
+
+/* START GENERIC */
+
+/* SITE SPECIFIC CSS Document */
+
+form {
+	margin: 0px;
+	padding: 0px;
+}
+
+div {
+	/*
+	font-family:Verdana;
+	font-size:12px;*/
+	
+	
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	float: left;
+	position: relative;
+	
+	border: solid 0px #00FF00;	
+	
+
+}
+
+#container {
+	display: block;
+	position: relative;
+	width: 98%;
+	height: 100%;
+	border: solid 0px #0000FF;
+	padding: 0px;
+	margin: 0px;
+
+	padding-left: 8px;
+	padding-right: 8px;
+	background-color: #FFF;
+	
+	overflow: auto;
+	-moz-box-flex: 1;
+}
+
+.header {
+	width: 100%;
+	clear: both;
+	height: 60px;
+	border-bottom: solid 1px #000000 !important;
+}
+
+.logo {
+
+	background-image: url(chrome://emepro/skin/eme/logo.png);
+	background-repeat: no-repeat;
+	background-position: 8px 8px;
+	width: 66px;
+	height: 60px;
+
+}
+
+/*MENU*/
+
+.menu {	
+	border:0px solid #00FF00 !important;
+	/*bottom:0;*/
+	display:block;
+	
+	float: right;
+
+	left:0px;
+	margin:0;
+	padding:0;
+
+	position:relative;	
+	top: 20px;
+
+}
+
+.menu ul.level-0 {
+	padding: 0px;
+	margin: 0px;	
+}
+
+.menu li {
+	list-style: none;
+	float: left;
+	position: relative;
+
+	padding: 0px;
+	margin: 0px;
+
+	height: auto;
+
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;		
+	
+	cursor: pointer;
+}
+
+.menu ul.level-1 li {
+	width: 120px;
+	text-align: left;
+	text-transform: none;
+
+}
+
+.menu li.level-0 {
+
+	padding: 3px;
+	width: 75px;
+
+
+	border-right:1px solid #000000 !important;
+
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.menu ul.level-0 li.first {
+	border-left:1px solid #000000 !important;
+}
+
+.menu ul.level-1 li.first {
+	border-left:0px solid #000000 !important;
+}
+
+.menu ul.level-1 {
+    	display: none;  
+	z-index: 999;
+	border: solid 1px #000000;
+	position: relative;
+	padding: 0px;
+	background-color: #FFFFFF;
+}
+
+.menu li a {
+	display: block;
+	/*border: solid 1px #000000;*/
+	cursor: pointer;
+}
+    
+.menu li:hover ul, #menu li.hover ul {
+	position: absolute;
+	display: block;
+	/*clear: both;
+	left: 0px;*/
+	
+}
+
+.menu li:hover li, #menu li.hover li {
+	float: none;
+	/*position: static;*/
+}
+
+.menu li {
+	background-color: #FFFFFF;
+	color: #000000;
+	border-bottom: solid 0px #000000;
+	border-top: solid 0px #000000;
+}
+
+.menu ul.level-1 li {
+	/*display: inline-block;
+	float: left;*/
+	height: 20px;
+}
+
+.menu ul.level-1 li {
+	display: block;
+	clear: both;
+	border: solid 0px;
+	background-color: transparent;
+}
+
+.menu li:hover li a, #menu li.hover li a {
+	/*background-image: url(/wiwe/inc/images/titulos/backg2.jpg);*/
+	background-color: #9edbf0;
+	color: #0096DB;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.menu li li a:hover, .menu li li:hover {
+	color: #000;
+	background-color: #EFF;
+}
+
+
+/*custom padding*/
+.menu ul.level-0 li {
+	
+}
+
+.menu ul.level-1 {
+	padding: 0px;
+}
+
+
+.menu ul.level-1 li {
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+
+
+
+.panel {
+
+	width: 100%;
+	height: 80%;
+}
+
+.toc {
+/*	width: 20%;*/
+	width: 230px;
+	/*padding: 5px;*/
+}
+
+.page {
+	/*width: 50%;*/
+	/*padding: 10px;*/
+	display: block;
+	position: relative;
+	float: left;
+	width: 100%;
+	padding-top: 8px;
+
+}
+
+.tdtoc {
+}
+
+.tdpage {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+div.location {
+	background-color: #EEEEEE;
+	position: relative;
+	text-align: left;
+
+	text-transform: uppercase;
+	font-weight: bold;
+	width: 100%;
+	
+	font-size: 12px;		
+	border: solid 2px #000000;
+	color: #000000;	
+	background-image: url("chrome://emepro/skin/img/fondo-boton.png");
+	
+	margin-bottom: 8px;
+}
+
+div.location ul.location {
+	display: block;
+	padding-left: 18px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	background-image: url(chrome://emepro/skin/eme/flechita.png);
+	background-repeat: no-repeat;
+	background-position: 6px 6px;
+}
+
+.location {
+	padding: 0px;
+	margin: 0px;
+}
+
+.location  li{
+	display: inline-block;
+}
+
+.location  li.parent-section  {
+	text-decoration: underline;
+}
+
+.location  li.parent-section:after  {
+}
+
+.location  li.selected-section {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.sidebar {
+	width: 188px;
+	padding: 0px;
+	margin: 0px;
+	float: right;
+}
+
+.campo {
+	width: 100%;
+	margin-bottom: 16px;
+}
+.campo .titulo,
+.campo .entrada {
+	width: 100%;
+}
+
+.campo .entrada {
+	width: 100%;
+}
+
+.campo input,
+.campo textarea,
+.campo select {
+	width: 100%;
+}
+
+.campo,
+.campo label {
+	clear: both;
+	text-align: left;
+	font-weight: normal;
+	font-size: 12px;
+	width: 100%;
+	display: block;
+	
+	
+
+}
+
+.campo label {
+	display: block;
+	position: relative;
+	border-bottom: solid 1px #000000;
+	padding-top: 8px;
+	padding-bottom: 8px;	
+	margin-bottom: 8px;
+}
+.campo label span {
+	display: inline-block;
+	padding-left: 16px;
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-weight: bold;
+	
+}
+
+.toc li.campo {
+	display: none !important;
+}
+
+div.marker {
+	position: absolute;
+	right: 16px;
+	top: 6px;
+	cursor: pointer;
+	
+}
+
+.toc ul {
+	list-style: none;
+}
+
+.toc ul,
+.toc li,
+.toc a {
+	display: block;
+	clear: both;
+	float: left;	
+	padding: 0px;	
+	
+	cursor: pointer;	
+}
+
+.toc a {
+	/*padding: 5px;*/
+	
+	cursor: pointer;	
+}
+
+.toc li a.categoria {
+	padding-left: 0px;
+	padding-bottom: 10px;
+
+	width: 230px;
+	background-color: #FFFFFF;
+
+	text-align: left;
+	text-transform: uppercase;
+
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	border-bottom: solid 1px #000000;	
+
+}
+
+.toc ul li li {
+	border: solid 0px #000000;
+}
+
+.tree {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.tree ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+.toc ul.categoria {
+	width: 100%;
+}
+
+.toc ul.categoria ul.deep-0 {
+	padding-left: 0px;
+	padding-top:0px;
+	/*width: 230px;*/
+}
+
+.toc ul.categoria ul.deep-0 {
+	border-bottom: solid 1px #000000;
+}
+
+.toc ul.categoria ul li {
+	/*width: 90%;*/
+}
+
+.toc li.categoria {
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	
+}
+
+.toc li.categoria a{
+	
+	cursor: pointer;
+	
+	text-transform: uppercase;	
+}
+
+.toc li ul li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.toc li ul li a {
+	font-size: 11px;
+	font-weight: bold !important;
+}
+
+.toc li.padre-collapsed,
+.toc li.padre-expanded {
+	background-repeat: no-repeat;
+	background-position: 0px 8px;
+	padding-left:8px;
+}
+
+.toc li.padre-collapsed {
+	/*background-image: url(../img/picol/arrow_sans_right_16.png);*/
+	background-image: url(chrome://emepro/skin/img/triangle_8.png);
+}
+
+.toc li.padre-expanded {
+	background-image: url(chrome://emepro/skin/img/triangle_8_ex.png);
+}
+
+div.ayuda {
+	background-image: url(chrome://emepro/skin/eme/pregunta.png);
+	width: 20px;
+	height: 20px;	
+	display: block;
+	float: left;	
+	background-repeat: no-repeat;	
+}
+
+div.texto-ayuda {
+	display: block;
+	float: left;
+	width: 100%;
+	clear: both;
+	position: relative;
+	font-weight: normal;
+	font-size: 11px;
+	font-weight: bold;
+	color: black;
+	
+	margin-top: 8px;
+	margin-bottom: 8px;
+	background-color: #ffff00;
+}
+
+div.texto-ayuda span {
+	display: block;
+	padding: 8px;
+}
+
+
+div.texto-ayuda img.tri {
+	display: block;
+	position: absolute;
+	right: 18px;
+	top: -10px;
+}
+
+div.small-marker {
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+
+div.small-marker-rojo {
+	background-image: url(chrome://emepro/skin/eme/rojo.png);
+}
+
+div.small-marker-amarillo {
+	background-image: url(chrome://emepro/skin/eme/amarillo.png);
+}
+
+div.small-marker-verde {
+	background-image: url(chrome://emepro/skin/eme/verde.png);
+	/*
+	position: absolute;
+	right: 30px;
+	
+	padding: 0px;*/
+}
+
+div.botones {
+	width: 100%;
+	position: relative;
+}
+
+div.botones button {
+	margin: 8px;
+}
+
+button {
+	font-weight: bold;
+	font-size: 12px;
+	font-family: Arial;
+	padding: 4px;
+
+	font-size: 12px;		
+	border: solid 2px #000000;
+	color: #000000;	
+	background-image: url("../img/fondo-boton.png");
+	
+	cursor: pointer;
+	
+	
+}
+button.previsualizar {
+	left: 0px;
+	position: absolute;
+	border: solid 0px;
+	background-color: white;
+	width: 100px;
+	height: 30px;
+	background-image: url(chrome://emepro/skin/eme/vistaprevia.png);
+	background-repeat: no-repeat;	
+}
+button.anterior {
+	position: absolute;
+	right: 48px;
+	border: solid 0px;
+	background-color: white;
+	background-image: url(chrome://emepro/skin/eme/atras.png);
+	background-repeat: no-repeat;
+	background-position: left;
+	width: 28px;
+	height: 28px;
+}
+
+button.siguiente {
+	position: absolute;
+	right: 0px;
+	border: solid 0px;
+	background-color: white;
+	
+	background-image: url(chrome://emepro/skin/eme/adelante.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	width: 28px;
+	height: 28px;
+	
+	
+}
+
+button.tiene_anterior {
+	border-left: solid 1px #000000;
+	width: 39px;
+}
+
+/*VISTA PREVIA*/
+.nav-vistaprevia {
+
+	display: block;
+	position: absolute;
+	border: solid 1px #000000;
+	bottom: 50px;
+
+}
+
+/*MARCADORES*/
+
+div.marker-verde,
+div.marker-amarillo,
+div.marker-rojo,
+div.marker-button {
+	width: 20px;
+	height: 20px;
+	padding: 0px;
+	margin-top: 0px;
+	display: block;
+	float: left;	
+	background-repeat: no-repeat;
+}
+
+div.marker_options {
+	display: block;
+	position: absolute;
+	display: none;
+	z-index: 400;
+	background-image: url("chrome://emepro/skin/eme/desplegable.png");
+	background-repeat: no-repeat;
+	width: 27px;
+	height: 64px;
+	padding: 3px;
+	left: -5px;
+	top: -22px;
+}
+
+div.marker_options div {
+	display: block;
+	position: relative;
+	width: 20px;
+	height: 20px;
+	float: left;
+	clear: both;
+}
+
+div.marker_button {
+	width: 20px;
+	height: 20px;
+	background-image: url(chrome://emepro/skin/eme/flechitas.png);
+}
+
+div.marker-verde {
+	background-image: url(chrome://emepro/skin/eme/verde.png);
+}
+
+div.marker-rojo {
+	background-image: url(chrome://emepro/skin/eme/rojo.png);
+}
+
+div.marker-amarillo {
+	background-image: url(chrome://emepro/skin/eme/amarillo.png);
+}
+
+.marker select  {
+	display: block;
+	float: left;
+	width: 20px;
+	border: none;
+}
+
+option.verde {
+	background-image: url(chrome://emepro/skin/img/bullet-color-small-S.png);
+	background-repeat: no-repeat;
+}
+
+option.rojo {
+	background-image: url(chrome://emepro/skin/img/bullet-color-small-N.png);
+	background-repeat: no-repeat;
+}
+
+option.amarillo {
+	background-image: url(chrome://emepro/skin/img/bullet-color-small-yellow.png);
+	background-repeat: no-repeat;
+}
+
+input, textarea {
+	
+	display: block;
+	position: relative;
+	width: 80%;
+
+}
+
+
+
+
+
+
+.formulario {
+	display: block;
+	position: relative;
+	clear: both;
+	width: 100%;
+	
+	
+}
+
+.userinfo {
+	padding: 0px;
+	margin: 0px;
+	padding-top: 8px;
+	padding-bottom: 10px;
+	border-bottom: solid 1px #000000 !important;
+}
+
+.userinfo div {
+	
+	display: block;
+	float: left;
+	text-align: left;
+}
+
+.userlogo {
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+.userlogo {
+	overflow: hidden;
+}
+
+.userlogo img {
+	width: 70px;
+	height: 70px;
+}
+
+.username {
+	margin-left: 14px;
+	width: 136px;
+
+	font-size: 11px;
+	font-weight: normal;	
+	text-transform: uppercase;
+}
+
+.projecttitle {
+	display: inline-block !important;
+	width: 136px;
+	margin-left: 14px;
+	margin-top: 8px;
+	background-color: #FFFF00;
+
+	font-size: 13px;
+	font-weight: bold;		
+	font-family: Arial;
+	text-transform: uppercase;
+}
+
+
+.sidebar .banners {
+	
+		display: block;
+		clear: both;
+		float: left;
+		width: 100%;
+}
+
+.help {
+	width: 100%;
+}
+
+.help .contenedor {
+	clear: both;
+	width: 188px;
+	height: auto;
+	text-align: left;
+
+	
+	background-image:  url("chrome://emepro/skin/img/fondo-boton.png");
+	background-position: -20px 0px;
+	
+	margin-top: 10px;
+}
+
+.flechaayuda {
+	display: block;
+	position: absolute;
+	top: -10px;
+	left: 14px;
+}
+
+
+.help .contenedor .textocontenedor {
+	display:block;
+	padding: 12px;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+
+}
+.textocontenedor h1,
+.textocontenedor h2,
+.textocontenedor h3 {
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.textocontenedor p {
+	text-align: left;
+}
+
+.banner {
+	width: 100%;
+	height: 180px;
+	background-color: #FFFF00;
+	padding-top: 80px;
+	margin-top: 8px;
+}
+
+.banners {
+	width: 100%;
+	height: 180px;
+	background-color: #FFFF00;
+	padding-top: 80px;
+	margin-top: 8px;
+	text-align: center;
+}
+
+.userinfo,
+.header,
+.menu,
+.banner,
+.banners,
+.page,
+.help,
+.toc {
+	border: solid 0px #CFCFCF;
+	
+}
+
+cke_parrafo {
+	width: 100% !important;
+}
+
+.buscador {
+	background-image: url(chrome://emepro/skin/eme/lupita.png);
+	background-repeat: no-repeat;
+	background-position: 154px 0px;
+	margin-top:8px;
+}
+
+.buscador {
+	width: 100%;
+	text-align: left;
+}
+
+.buscador input {
+	width: 80%;
+	
+}
+
+#modo {
+	margin-top: 8px;
+}
+
+.modo-guiado button{
+	background-image: url(chrome://emepro/skin/eme/guiado.png) !important;
+	border: solid 0px;
+	width: 85px;
+	height: 27px;
+	background-color: #FFFFFF;
+
+}
+
+.modo-noguiado button{
+	background-image: url(chrome://emepro/skin/eme/guiaapagado.png) !important;
+	background-repeat: no-repeat;
+	border: solid 0px;
+	width: 81px;
+	height: 25px;
+	background-color: #EFEFEF;
+	color: #FFFFFF;
+}
+
+
+input {
+
+	padding: 5px;
+
+}
+
+
+.cke_editor_parrafo {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	display: block;
+	position: relative;
+}
+
+span.cke_skin_kama,
+.cke_wrapper {
+
+	margin: 0px !important;
+	padding: 0px !important;
+	border: solid 0px !important;
+	-moz-border-radius: 0px 0px 0px 0px !important;
+}
+
+.cke_wrapper {
+
+	border: solid 1px #000000 !important;
+
+}
+
+
+
+/*PRESUPUESTO ECONOMICO*/
+.contenedor-multiple div {
+	display: block;
+	float: left;
+	position: relative;
+}
+
+.contenedor-multiple input {
+	border: solid 1px #DFDFDF;
+}
+
+.contenedor-multiple {
+	display: block;
+	float: left;
+	position: relative;
+	
+	width: 100%;
+	overflow: hidden;
+	border: solid 0px;
+
+}
+.contenedor-multiple .encabezado {
+	display: block;
+	float: left;
+	position: relative;
+	
+	width: 100%;
+	overflow: hidden;
+	text-align: left;
+	border: solid 0px #FF0000;
+	border-bottom: solid 1px #000000;
+}
+
+.contenedor-multiple .encabezado .columna {
+	display: block !important;
+	float: left !important;
+	clear: none !important;
+	height: 24px !important;
+	border: solid 0px;
+	border-right: solid 1px #000000;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+ .encabezado .last-item {
+	border-right: solid 0px #000000 !important;
+}
+
+.contenedor-multiple .encabezado .columna label {
+	font-size: 9px;
+	padding: 0px;
+	margin: 0px;
+	padding-left: 5px;
+	border: solid 0px;
+}
+
+.contenedor-multiple .contenedor {
+	
+	display: block;
+	float:left;
+	position: relative;
+	width: 100%;
+	border: solid 0px #00FF00;
+	/*height: 400px;*/
+	/*overflow: auto;*/
+
+}
+
+
+.contenedor-multiple .contenedor .rubro {
+	
+	width: 100%;
+	border: solid 0px #FFFF00;
+
+}
+
+.contenedor-multiple .contenedor .rubro .encabezado-rubro {
+	width: 100%;
+	border: solid 0px #0000FF;
+	border-top : solid 1px #000000;
+	border-bottom : solid 1px #000000;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.encabezado-rubro .acciones {
+	float: right;
+}
+
+.contenedor-multiple .contenedor .first-item .encabezado-rubro {
+	border-top : solid 0px #000000;
+}
+
+
+.contenedor-multiple .contenedor .rubro .registros-rubro {
+	width: 100%;
+	border: solid 0px #FF00FF;
+}
+
+.contenedor-multiple .contenedor .rubro .registros-rubro .entrada-registro {
+	width: 100%;
+	border: solid 0px #FF00FF;
+}
+
+
+.contenedor-multiple .contenedor .rubro .registros-rubro .entrada-registro .columna {
+	display: block;
+	float: left;
+	clear: none;
+}
+
+.contenedor-multiple .encabezado .columna {
+	width: 8.3%;
+}
+
+.contenedor-multiple .contenedor .rubro .registros-rubro .entrada-registro .columna {
+	width: 8.3%;
+	border-left: solid 1px #FFFFFF;
+}
+
+.contenedor-multiple .encabezado .concepto,
+.contenedor-multiple .contenedor .rubro .registros-rubro .entrada-registro .concepto {
+	width: 16%;
+}
+
+.contenedor-multiple .encabezado .descripcion,
+.contenedor-multiple .contenedor .rubro .registros-rubro .entrada-registro .descripcion {
+	width: 9%;
+}
+
+.contenedor-multiple .encabezado .cantidad,
+.contenedor-multiple .contenedor .rubro .registros-rubro .entrada-registro .cantidad {
+	width: 5%;
+}
+
+.contenedor-multiple .encabezado .rubro	{
+	width: 4%;
+}
+
+
+.contenedor-multiple .contenedor .rubro .registros-rubro .entrada-registro .columna input {
+	padding: 2px;
+	width: 100%;
+}
+
+.contenedor-multiple .encabezado .last-item,
+.contenedor-multiple .entrada-registro .last-item {
+	width: 6%;
+	float: right !important;
+}
+
+.contenedor-multiple .contenedor .rubro .registros-rubro .entrada-registro .first-item {
+
+	margin-left: 4%;
+
+}
+
+.contenedor-multiple .contenedor .rubro .registros-rubro .entrada-registro .last-item {
+	text-align: right;
+}
+
+
+.encabezado-rubro input {
+	display: inline-block;
+	clear: none;
+	width: 25%;
+}
+
+ .entrada-nuevo-registro .first-item:before {
+	content: "*";
+	position: absolute;
+	left: -10px;
+ }
+
+ .acciones {
+	margin-right: 5px;
+}
+ 
+ .acciones .abajo {
+	display: inline-block;
+	float: right;
+	width: 20px;
+	height: 20px;
+	background-image: url("chrome://emepro/skin/eme/miniabajo.png"); 
+ }
+
+ .acciones .arriba {
+	display: inline-block; 
+	float: right;
+	width: 20px;
+	height: 20px;
+	background-image: url("chrome://emepro/skin/eme/miniarriba.png"); 
+ }
+
+ .acciones .eliminar {
+	display: inline-block;  
+	float: right;
+	width: 20px;
+	height: 20px;
+	background-image: url("chrome://emepro/skin/eme/minieliminar.png");
+ }
+
+ .entrada-nuevo-registro .acciones {
+	width: 120px;
+ }
+ 
+ .entrada-nuevo-registro .acciones button{
+	padding: 2px !important;
+	margin-bottom: 5px !important;
+ }
+ 
+  .encabezado-rubro label,
+  .encabezado-actividad label  {
+	display: inline !important;
+	width: auto;
+	padding: 0px !important;
+	margin: 0px !important;
+	padding-left: 20px !important;
+	text-transform: uppercase;
+	font-weight: bold;
+	height: 20px;
+	border: 0px;
+	cursor: pointer;
+	
+  }
+  
+  .encabezado-rubro .subtotal-rubro {
+	float: right;
+	margin-right: 5px;
+	text-align: center;
+	width: 8%;
+}
+  
+  .encabezado-rubro .subtotal-rubro span{
+	font-weight: bold;
+	font-size: 15px;
+
+  }
+  
+ 
+ .subtotal {
+	text-align: right;
+ }
+ 
+ .subtotal span {
+	display: inline-block;
+	padding-top: 3px;
+	padding-right: 3px;
+	font-weight: bold;
+ }
+ 
+ .encabezado-rubro-collapsed,
+ .encabezado-rubro-expanded {
+	background-position: 0px 8px;
+	background-repeat: no-repeat;
+	
+	cursor: pointer;
+ }
+ 
+ .encabezado-rubro-collapsed {
+	border-bottom: solid 0px #FFFFFF !important;
+	background-image: url(../img/triangle_8.png);
+ }
+  .encabezado-rubro-expanded {
+	background-image: url(../img/triangle_8_ex.png);
+ }
+ 
+ .cronograma {
+	
+	display: block;
+	overflow: auto;
+	
+ }
+ 
+ 
+ /*ACTIVIDADES*/
+ 
+ .actividad {
+	width: 100%;
+	background-color: #EFEFEF;
+ }
+ 
+ .encabezado-actividad {
+	width: 100%;
+	padding: 5px;
+	border-bottom: solid 1px #000000;
+	border-top: solid 1px #000000;
+	background-color: #FFFFFF;
+ }
+ 
+  .encabezado-actividad label {
+	padding-left: 20px;
+  }
+ 
+ .encabezado-actividad .acciones {
+	float: right;
+ }
+ 
+ .actividad .campo {
+	
+	display: block  !important;
+	width: 49%  !important;
+	float: left !important;
+	clear: none !important;
+	padding: 0.5%;
+	margin: 0px;	
+ }
+ 
+  .actividad .campo label {
+	border: solid 0px !important;
+	text-transform: uppercase;
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 8px;
+  }
+  
+   .actividad button {
+	float: right !important;
+   }
+  
+.actividad .campo .fecha select {
+
+	width: auto !important;
+	clear: none !important;
+	float: left;
+} 
+
+
+/*INFORMES*/
+
+.reporte {
+	width: 98%;
+}
+
+.reporte ul,
+.reporte li {
+	list-style: none;
+	padding: 0px;
+	margin-left: 0px;
+}
+
+.reporte li.categoria a {
+
+	margin-left: 50px;
+}
+
+.reporte li.campo {
+	position: relative !important;
+}
+
+.toc ul.secciones {
+	width: 100%;
+}
+
+.toc input,
+.toc .small-marker-verde {
+	display: none;
+}
+
+.reporte input {
+	
+	display: block !important;
+	position: absolute !important;
+	left: 22px;
+	width: auto !important;
+
+}
+
+.reporte li {
+	background-image: url("");
+}
+
+
+.reporte ul.categoria ul.deep-0 {
+	/*border-bottom: solid 1px #000000;*/
+}
+
+.reporte ul.categoria ul li {
+	/*width: 90%;*/
+}
+
+.reporte li.categoria {
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	
+}
+
+.reporte li.categoria a{
+	
+	cursor: pointer;
+	
+	text-transform: uppercase;	
+}
+
+.reporte li ul li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.reporte li ul li a {
+	font-size: 11px;
+	font-weight: bold !important;
+}
+
+.reporte li.categoria-collapsed,
+.reporte li.categoria-expanded,
+.reporte li.padre-collapsed,
+.reporte li.padre-expanded {
+	background-repeat: no-repeat;
+	background-position: 50px 8px;
+}
+
+.deep-0 .reporte li.padre-collapsed {
+	background-position: 60px 8px;
+}
+
+.reporte li.seccion a {
+	padding-left:50px;
+}
+
+.reporte li.campo a {
+	padding-left:50px;
+}
+
+.reporte ul.deep-0 li a{
+	margin-left: 40px;
+}
+
+.reporte ul.deep-1 li a{
+	padding-left: 64px;
+}
+
+.reporte ul.deep-2 li a{
+	padding-left: 100px;
+}
+
+
+.reporte li.padre-collapsed,
+.reporte li.categoria-collapsed {
+	/*background-image: url(../img/picol/arrow_sans_right_16.png);*/
+	background-image: url(../img/triangle_8.png);
+}
+
+.reporte li.padre-expanded,
+.reporte li.categoria-expanded {
+	background-image: url(../img/triangle_8_ex.png);
+}
+
+.reporte li.categoria {
+	font-weight: bold;
+	border-top: solid 1px #000000;
+}
+
+.reporte li.categoria {
+	background-position: 50px 10px;
+}
+
+.reporte .marker {
+	display: block;
+	/*position: absolute;*/
+	left: 0px;
+}
+
+
+.reporte .campo {
+	margin-bottom: 5px !important;
+	font-weight: normal;
+}
+
+.reporte input {
+	width: 16px;
+	height: 16px;
+	border: solid 1px #000000;
+}
+
+
+.cat4_padre ul {
+	width: 100%;
+}
+
+
+.reporte .acciones {
+	width: 100%;
+	border-top: solid 1px #000000;
+	border-bottom: solid 1px #000000;
+	height: 40px;
+}
+
+.reporte .acciones div {
+	float: left;
+	display: block;
+	margin: 4px;
+	
+}
+
+.reporte .acciones .guardar {
+	background-image: url(chrome://emepro/skin/eme/guardar.png);
+	background-position: 0px 2px;
+	background-repeat: no-repeat;
+	width: 22px;
+	height: 22px;
+}
+
+.reporte .acciones .guardarcomo {
+	background-image: url(chrome://emepro/skin/eme/guardarcomo.png);
+	background-position: 10px 0px;
+	border-left: solid 1px #000000;
+	background-repeat: no-repeat;
+	width: 22px;
+	height: 22px;
+	padding-left: 20px;
+}
+
+
+.reporte  li.informe  a {
+	color: #999999 !important;
+}
+
+.informe .last-item {
+	display: block;
+	float: right;
+	right: 8px;
+	position: absolute;
+}
+
+li.informe  {
+	width: 90%;
+}
+
+.toc .small-marker {
+	display: none !important;
+}
